@@ -5,7 +5,7 @@ const UserSchema=mongoose.Schema({
         required:true,
         minLength:4
     },
-    catergory:{
+    category:{
         type:String,
         required:true,
         minLength:4
