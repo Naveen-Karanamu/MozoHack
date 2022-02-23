@@ -1,10 +1,11 @@
 const mongoose =require("mongoose");
 const UserSchema=mongoose.Schema({
-    // id:{
-    //     type:Number,
-    //     required:true
-    // },
     name:{
+        type:String,
+        required:true,
+        minLength:4
+    },
+    catergory:{
         type:String,
         required:true,
         minLength:4
