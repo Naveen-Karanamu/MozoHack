@@ -99,6 +99,26 @@ user.get("/user/target/:target", async(req,res)=>{
         return res.status(500).json({error:error.message})
     }
 })
+/*
+Route: /user/category
+Description: to get all the users by category
+Access: public
+parameters:target
+Method: Get
+*/
+user.get("/user/target/:category", async(req,res)=>{
+    try {
+        const getUserByCategory=await UserModel.findOne({
+            category:req.params.category           
+        })
+        if(!category) {
+            return res.json({error:`No user found with the category: ${req.params.category}`})
+        }
+        return res.status(200).json({user:getUserByCategory});
+    } catch (error) {
+        return res.status(500).json({error:error.message})
+    }
+})
 
 /*
 Route: /user
