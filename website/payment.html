@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="launchRazorPay()">pay</button>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        const launchRazorPay = () => {
+            let options = {
+                key: "rzp_test_PKPubWYc4XYFkp",
+                amount: 400 * 100,
+                currency: "INR",
+                name: "Fund Raiser",
+                description: "Payment gateway",
+                image: "",
+                handler: () => {
+                    alert("Payment Done");
+                },
+                theme: {
+                    color: "#0d6efd"
+                },
+
+            };
+
+            const RazorPay = new window.Razorpay(options);
+            RazorPay.open();
+
+        };
+    </script>
+</body>
+
+</html>
