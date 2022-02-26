@@ -49,7 +49,6 @@ button{
     transition: 0.3s;
 }
  button:hover{
-     background-color:rgb(159, 223, 63) ;
      color: white;
  }
  #chveron:hover{
