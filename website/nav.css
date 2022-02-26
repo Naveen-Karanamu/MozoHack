@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+nav{
+    position: fixed;
+    width: 100vw;
+    padding: 3vw;
+    padding-bottom: 1vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    z-index: 10;
+}
+.First{
+    margin-left:2vw ;
+    margin-right: 2vw;
+    display: flex;
+    gap: 2.5vw;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+.logo{
+    color: rgb(159, 223, 63);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    bottom: 8px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    /* background-image: url('Screenshot (66).png');
+    height: 2rem;
+    width: 2rem;
+    position: relative; */
+}
+button{
+    position: relative;
+    bottom: 4px;
+    border: rgb(159, 223, 63) solid;
+    padding: 5px;
+    color: rgb(159, 223, 63);
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 0.3s;
+}
+ button:hover{
+     background-color:rgb(159, 223, 63) ;
+     color: white;
+ }
+ #chveron:hover{
+     transform: rotate(180deg);
+     transition: 0.3s;
+ }
+
+ul li.navcontent ul li.submenu
+{
+    display: none;
+ 
+    
+}
+ul li.navcontent:hover ul li.submenu
+    {
+      display: block;
+     
+      background-color:#f5e2e2;
+     
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      
+  
+    }
+    ul li.navcontent ul li.submenus
+{
+    display: none;
+    
+ 
+}
+ul li.navcontent:hover ul li.submenus
+    {
+      display: block;
+     
+      background-color:#f5e2e2;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;       
+    }
