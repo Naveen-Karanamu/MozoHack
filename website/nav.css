@@ -13,6 +13,7 @@ nav{
     justify-content: space-between;
     background-color: whitesmoke;
     z-index: 10;
+    height: 80px;
 }
 .First{
     margin-left:2vw ;
@@ -66,7 +67,6 @@ ul li.navcontent:hover ul li.submenu
     {
       display: block;
      
-      background-color:#f5e2e2;
      
       box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
       
@@ -82,6 +82,18 @@ ul li.navcontent:hover ul li.submenus
     {
       display: block;
      
-      background-color:#f5e2e2;
+      /* background-color:#f5e2e2; */
       box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;       
+    }
+
+    a:link{
+        text-decoration: none;
+        background-color: rgb(98, 98, 240);       
+
+    }
+    a{
+        color:#ffff;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 20px;
     }
